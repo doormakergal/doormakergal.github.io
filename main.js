@@ -38,5 +38,5 @@ window.onLoad = load();
 
 window.setInterval(function(){
 	clickSteal(purses);
-	save();
+	// save();
 }, 1000);
