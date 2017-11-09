@@ -28,6 +28,13 @@ function save(){
 	localStorage.setItem("save",JSON.stringify(save));
 }
 
+function load(){
+	var savegame = JSON.parse(localStorage.getItem("save"));
+	if (typeof savegame.loot !== "undefined") loot = savegame.loot;
+	if (typeof savegame.purses !== "undefined") purses = savegame.purses;
+};
+	
+window.onLoad = load()
 
 window.setInterval(function(){
 	clickSteal(purses);
