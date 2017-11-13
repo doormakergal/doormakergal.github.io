@@ -19,7 +19,7 @@ function purseUp(){
 	var nextCost = Math.floor(10 * Math.pow(1.1,purses));
 	document.getElementById('cost').innerHTML = nextCost;
 };
-
+/*
 function save(){
 	var save = {
 		loot: loot,
@@ -33,7 +33,8 @@ function load(){
 	if (typeof savegame.loot !== "undefined") loot = savegame.loot;
 	if (typeof savegame.purses !== "undefined") purses = savegame.purses;
 };
-	
+*/ 
+
 // window.onLoad = load();
 
 window.setInterval(function(){
