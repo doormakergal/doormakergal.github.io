@@ -34,7 +34,7 @@ function load(){
 	if (typeof savegame.purses !== "undefined") purses = savegame.purses;
 };
 	
-window.onLoad = load();
+// window.onLoad = load();
 
 window.setInterval(function(){
 	clickSteal(purses);
